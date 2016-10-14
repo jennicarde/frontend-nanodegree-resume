@@ -45,18 +45,18 @@ var projects = {
       "url"
       ]
     }, {
-      "title" : "",
-      "dates" : "",
-      "description" : "",
+      "title" : "Mock up to Article",
+      "dates" : "2016",
+      "description" : "Pratice HTML skills",
       "images" : [
         "url",
         "url",
         "url"
       ]
     }, {
-      "title" : "",
-      "dates" : "",
-      "description" : "",
+      "title" : "Portfolio",
+      "dates" : "2016",
+      "description" : "HTML, CSS, JavaScript, image compression, responsive design",
       "images" : [
       "url",
       "url",
@@ -122,6 +122,7 @@ var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 
+
 if(bio.skills.length > 0) {
   $("#header").append(HTMLskillsStart);
 
@@ -170,25 +171,43 @@ $(document).click(function(loc) {
 // varible is coming out as undefined in both functions
 
 // MY function
-// function inNAME(name) {
-//   var oldName = name;
-//   console.log(oldName);
-//   var names = oldName.split(" ");
-//   names[1] = names[1].toUpperCase();
-//   names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
-//   var finalName = names.join(" ");
-//   console.log(names);
-//   console.log(finalName);
-//   return finalName;
-// }
+function inName(name) {
+  var oldName = name;
+  var names = oldName.split(" ");
+  names[1] = names[1].toUpperCase();
+  names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
+  var finalName = names.join(" ");
+  return finalName;
+}
 
 // CLASS example function
-function inNAME(name) {
-  name = name.trim().split(" ");
-  console.log(name)
-  name[1] = name[1].toUpperCase();
-  name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-  return name[0] + " " + name[1];
-}
+// function inName(name) {
+//   name = bio.name.trim().split(" ");
+//   console.log(name)
+//   name[1] = name[1].toUpperCase();
+//   name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
+//   return name[0] + " " + name[1];
+// }
 //Note that this at the very bottom, left of the page
 $("#main").append(internationalizeButton);
+
+// object function for Projects
+for (projects in projects.project) {
+  $("#projects").append(HTMLprojectStart);
+
+  var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+  $(".project-entry:last").append(formattedTitle);
+
+  var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+  $(".project-entry:last").append(formattedDates);
+
+  var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+  $(".project-entry:last").append(formattedDescription);
+
+  if (projects.projects[project].images.length > 0) {
+    for (image in projects.projects[project].images) {
+    var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+    $(".project-entry:last").append(formattedImage);
+    }
+  }
+}
