@@ -154,7 +154,6 @@ function displayWork() {
     $(".work-entry:last").append(formattedworkDescription);
   }
 }
-
 // Call function
 displayWork();
 
@@ -191,8 +190,10 @@ function inName(name) {
 //Note that this at the very bottom, left of the page
 $("#main").append(internationalizeButton);
 
+
 // object function for Projects
-for (projects in projects.project) {
+projects.display = function () {
+for (project in projects.projects) {
   $("#projects").append(HTMLprojectStart);
 
   var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
@@ -211,3 +212,6 @@ for (projects in projects.project) {
     }
   }
 }
+};
+// Call function
+projects.display();
