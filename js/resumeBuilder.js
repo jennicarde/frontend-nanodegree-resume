@@ -335,6 +335,8 @@ function displayEducation() {
 // Call function
 displayEducation();
 
+// MAP
+$("#mapDiv").append(googleMap);
 
 // *************************************
 /*
