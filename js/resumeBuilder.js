@@ -5,188 +5,176 @@ This is empty on purpose! Your code to build the resume will go here.
 //var formattedName = HTMLheaderName.replace("%data%", name);
 //var role = "Front End Developer"
 //var formattedRole = HTMLheaderRole.replace("%data%", role);
-
 // $("#header").prepend(formattedRole);
 // $("#header").prepend(formattedName);
-
 var bio = {
-  "name" : "Jenni Carde",
-  "role" : "Front-End Developer",
-  "contacts" : {
-    "mobile" : "949-555-1234",
-    "email" : "jc1@gmail.com",
-    "github" : "jennicarde",
-    "twitter" : "jenni_carde",
-    "location" : "California"
-  },
-  "welcomeMessage" : "I create for the web.",
-  "skills" : ["HTML", "CSS", "JavaScript"],
-  "bioPic" : "images/profile-pic-wood.png"
+    "name": "Jenni Carde",
+    "role": "Front-End Developer",
+    "contacts": {
+        "mobile": "949-555-1234",
+        "email": "jc1@gmail.com",
+        "github": "jennicarde",
+        "twitter": "jenni_carde",
+        "location": "California"
+    },
+    "welcomeMessage": "I create for the web.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "bioPic": "images/profile-pic-wood.png"
 };
 
 var work = {
-  "jobs" : [
-    {
-      "employer" : "Self",
-      "title" : "Online & Freelance English Teacher",
-      "location" : "Germany",
-      "dates" :"2014-2016",
-      "description" : "Teach private one-on-one lessons and intensive courses for all ages and levels in both General and Business English; <br>Design a diverse curriculum focused on motivating students and meeting each student's needs, learning style, and ability; <br>Incorporate education technology into interactice lessons."
+    "jobs": [{
+        "employer": "Self",
+        "title": "Online & Freelance English Teacher",
+        "location": "Germany",
+        "dates": "2014-2016",
+        "description": "Teach private one-on-one lessons and intensive courses for all ages and levels in both General and Business English; <br>Design a diverse curriculum focused on motivating students and meeting each student's needs, learning style, and ability; <br>Incorporate education technology into interactice lessons."
     }, {
-      "employer" : "Unshy Magazine, Wall Street English",
-      "title" : "Content Coordinator",
-      "location" : "Thailand",
-      "dates" :"2011-2013",
-      "description" : "Taught journalistic writing, including instructing students on advanced sentence styles, encouraging English language enthusiasm and creativity; <br>Reviewed and edited weekly writing submissions; <br>Promoted Unshy Magazine (a student newspaper) and complementary writing programs; <br>Co-wrote, directed, filmed, and edited student films for school events and contents."
+        "employer": "Unshy Magazine, Wall Street English",
+        "title": "Content Coordinator",
+        "location": "Thailand",
+        "dates": "2011-2013",
+        "description": "Taught journalistic writing, including instructing students on advanced sentence styles, encouraging English language enthusiasm and creativity; <br>Reviewed and edited weekly writing submissions; <br>Promoted Unshy Magazine (a student newspaper) and complementary writing programs; <br>Co-wrote, directed, filmed, and edited student films for school events and contents."
     }, {
-      "employer" : "Wall Street English",
-      "title" : "English Language Teacher",
-      "location" : "Thailand",
-      "dates" :"2011-2013",
-      "description" : "Adapted instruction materials to create interesting, challenging, and fluid lessons in Encounter and Complementary classes; <br>Elicit, teach, and provide positive feedback and constructive critcism; <br>Motivated and encouraged students to maintain effective and efficient individual study habbits; <br>Planned and prepared engaging, interactive, and dynamic lesson for Social Clubs and English Corners."
-    }
-  ]
+        "employer": "Wall Street English",
+        "title": "English Language Teacher",
+        "location": "Thailand",
+        "dates": "2011-2013",
+        "description": "Adapted instruction materials to create interesting, challenging, and fluid lessons in Encounter and Complementary classes; <br>Elicit, teach, and provide positive feedback and constructive critcism; <br>Motivated and encouraged students to maintain effective and efficient individual study habbits; <br>Planned and prepared engaging, interactive, and dynamic lesson for Social Clubs and English Corners."
+    }]
 };
 
 var projects = {
-  "projects" : [
-    {
-      "title" : "Animal Trading Card",
-      "dates" : "2016",
-      "description" : "Practice CSS skills",
-      "images" : [
-        "http://placehold.it/350x150",
-        "http://placehold.it/350x150",
-        "http://placehold.it/350x150"
-      ]
+    "projects": [{
+        "title": "Animal Trading Card",
+        "dates": "2016",
+        "description": "Practice CSS skills",
+        "images": [
+            "http://placehold.it/350x150",
+            "http://placehold.it/350x150",
+            "http://placehold.it/350x150"
+        ]
     }, {
-      "title" : "Mock up to Article",
-      "dates" : "2016",
-      "description" : "Pratice HTML skills",
-      "images" : [
-        "http://placehold.it/350x150",
-        "http://placehold.it/350x150",
-        "http://placehold.it/350x150"
-      ]
+        "title": "Mock up to Article",
+        "dates": "2016",
+        "description": "Pratice HTML skills",
+        "images": [
+            "http://placehold.it/350x150",
+            "http://placehold.it/350x150",
+            "http://placehold.it/350x150"
+        ]
     }, {
-      "title" : "Portfolio",
-      "dates" : "2016",
-      "description" : "HTML, CSS, JavaScript, image compression, responsive design",
-      "images" : [
-        "http://placehold.it/350x150",
-        "http://placehold.it/350x150",
-        "http://placehold.it/350x150"
-      ]
-    }
-  ]
+        "title": "Portfolio",
+        "dates": "2016",
+        "description": "HTML, CSS, JavaScript, image compression, responsive design",
+        "images": [
+            "http://placehold.it/350x150",
+            "http://placehold.it/350x150",
+            "http://placehold.it/350x150"
+        ]
+    }]
 };
 
 var education = {
-  "schools" : [
-    {
-      "name" : "New York University",
-      "location" : "New York, New York",
-      "degree" : "MA",
-      "majors" : ["European & Mediterranean Studies"],
-      "dates" : "2010",
-      "url" : "http://cems.as.nyu.edu/page/home"
+    "schools": [{
+        "name": "New York University",
+        "location": "New York, New York",
+        "degree": "MA",
+        "majors": ["European & Mediterranean Studies"],
+        "dates": "2010",
+        "url": "http://cems.as.nyu.edu/page/home"
     }, {
-      "name" : "University of California, Irvine",
-      "location" : "Irvine, CA",
-      "degree" : "BA",
-      "majors" : ["International Studies; Minor: Conflict Resolution"],
-      "dates" : "2006",
-      "url" : "http://www.internationalstudies.socsci.uci.edu/"
-    }
-  ],
-  "certificates" : [
-    {
-      "name" : "International House Bangkok",
-      "location" : "Thailand",
-      "majors" : ["CELTA (The Certificate in teaching English to speakers of other languages)"],
-      "dates" : "2011",
-      "url" : "http://www.ihbangkok.com/"
+        "name": "University of California, Irvine",
+        "location": "Irvine, CA",
+        "degree": "BA",
+        "majors": ["International Studies; Minor: Conflict Resolution"],
+        "dates": "2006",
+        "url": "http://www.internationalstudies.socsci.uci.edu/"
+    }],
+    "certificates": [{
+        "name": "International House Bangkok",
+        "location": "Thailand",
+        "majors": ["CELTA (The Certificate in teaching English to speakers of other languages)"],
+        "dates": "2011",
+        "url": "http://www.ihbangkok.com/"
     }, {
-      "name" : "Orange County Human Relations/UCI",
-      "location" : "Santa Ana, CA",
-      "majors" : ["Mediation"],
-      "dates" : "2005",
-      "url" : "http://www.ochumanrelations.org/"
-    }
-  ],
-  "onlineCourses" : [
-    {
-      "title" : "Front-End Web Developer Nanodegree",
-      "school" : "Udacity",
-      "dates" : "2016",
-      "url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+        "name": "Orange County Human Relations/UCI",
+        "location": "Santa Ana, CA",
+        "majors": ["Mediation"],
+        "dates": "2005",
+        "url": "http://www.ochumanrelations.org/"
+    }],
+    "onlineCourses": [{
+        "title": "Front-End Web Developer Nanodegree",
+        "school": "Udacity",
+        "dates": "2016",
+        "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
     }, {
-      "title" : "Interaction Design Specialization",
-      "school" : "Coursera; University of California, San Diego",
-      "dates" : "2016",
-      "url" : "https://www.coursera.org/specializations/interaction-design"
+        "title": "Interaction Design Specialization",
+        "school": "Coursera; University of California, San Diego",
+        "dates": "2016",
+        "url": "https://www.coursera.org/specializations/interaction-design"
     }, {
-      "title" : "UX Design",
-      "school" : "Springboard",
-      "dates" : "2016",
-      "url" : "https://www.springboard.com/workshops/ux-design/"
+        "title": "UX Design",
+        "school": "Springboard",
+        "dates": "2016",
+        "url": "https://www.springboard.com/workshops/ux-design/"
     }, {
-      "title" : "Design 101",
-      "school" : "Designlab",
-      "dates" : "2016",
-      "url" : "http://trydesignlab.com/web-design-course/"
+        "title": "Design 101",
+        "school": "Designlab",
+        "dates": "2016",
+        "url": "http://trydesignlab.com/web-design-course/"
     }, {
-      "title" : "Inbound Marketing Certification",
-      "school" : "HubSpot",
-      "dates" : "2016",
-      "url" : "https://certification.hubspot.com/inbound-certification"
-    }
-  ]
+        "title": "Inbound Marketing Certification",
+        "school": "HubSpot",
+        "dates": "2016",
+        "url": "https://certification.hubspot.com/inbound-certification"
+    }]
 };
 
 // HEADER - BIO
-function displayBio () {
-  var formattedName = HTMLheaderName.replace("%data%", bio.name);
-  var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-  $("#header").prepend(formattedRole);
-  $("#header").prepend(formattedName);
+function displayBio() {
+    var formattedName = HTMLheaderName.replace("%data%", bio.name);
+    var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+    $("#header").prepend(formattedRole);
+    $("#header").prepend(formattedName);
 
-  // if (bio.contacts.length > 0) {
-  //   $("#topContacts").append(HTMLcontactGeneric.replace("%contact%", contact).replace("%data%", data));
-  //
-  //   bio.contacts.forEach(function(contact){
-  //     var formattedMobile = HTMLmobile.replace("%data%", contact.mobile);
-  //     $("#topContacts").append(formattedMobile);
-  //
-  //     var formattedEmail = HTMLemail.replace("%data%", contact.email);
-  //     $("#topContacts").append(formattedEmail);
-  //   })
-  // }
+    // if (bio.contacts.length > 0) {
+    //   $("#topContacts").append(HTMLcontactGeneric.replace("%contact%", contact).replace("%data%", data));
+    //
+    //   bio.contacts.forEach(function(contact){
+    //     var formattedMobile = HTMLmobile.replace("%data%", contact.mobile);
+    //     $("#topContacts").append(formattedMobile);
+    //
+    //     var formattedEmail = HTMLemail.replace("%data%", contact.email);
+    //     $("#topContacts").append(formattedEmail);
+    //   })
+    // }
 
-  var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-  var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-  var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-  var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-  var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-  $("#topContacts").append(formattedMobile, formattedEmail, formattedGithub, formattedTwitter, formattedLocation);
-  $("#footerContacts").append(formattedMobile, formattedEmail, formattedGithub, formattedTwitter, formattedLocation);
+    var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+    var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+    var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+    var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+    $("#topContacts").append(formattedMobile, formattedEmail, formattedGithub, formattedTwitter, formattedLocation);
+    $("#footerContacts").append(formattedMobile, formattedEmail, formattedGithub, formattedTwitter, formattedLocation);
 
-  var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-  $("#header").append(formattedBioPic);
-  var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-  $("#header").append(formattedWelcomeMessage);
+    var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+    $("#header").append(formattedBioPic);
+    var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+    $("#header").append(formattedWelcomeMessage);
 
-  if(bio.skills.length > 0) {
-    $("#header").append(HTMLskillsStart);
+    if (bio.skills.length > 0) {
+        $("#header").append(HTMLskillsStart);
 
-    var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-    $("#skills").append(formattedSkill);
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-    $("#skills").append(formattedSkill);
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-    $("#skills").append(formattedSkill);
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
-  }
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+        $("#skills").append(formattedSkill);
+        formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+        $("#skills").append(formattedSkill);
+        formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+        $("#skills").append(formattedSkill);
+        formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+    }
 }
 // Call function
 displayBio();
@@ -216,23 +204,23 @@ function displayWork() {
 */
 
 function displayWork() { //one way to start function
-  work.jobs.forEach(function(job) {
-    $("#workExperience").append(HTMLworkStart);
+    work.jobs.forEach(function(job) {
+        $("#workExperience").append(HTMLworkStart);
 
-    var formattedEmployer = HTMLworkEmployer.replace("%data%", job.employer);
-    var formattedTitle = HTMLworkTitle.replace("%data%", job.title);
-    var formattedEmployerTitle = formattedEmployer + formattedTitle;
-    $(".work-entry:last").append(formattedEmployerTitle);
+        var formattedEmployer = HTMLworkEmployer.replace("%data%", job.employer);
+        var formattedTitle = HTMLworkTitle.replace("%data%", job.title);
+        var formattedEmployerTitle = formattedEmployer + formattedTitle;
+        $(".work-entry:last").append(formattedEmployerTitle);
 
-    var formattedworkLocation = HTMLworkLocation.replace("%data%", job.location);
-    $(".work-entry:last").append(formattedworkLocation);
+        var formattedworkLocation = HTMLworkLocation.replace("%data%", job.location);
+        $(".work-entry:last").append(formattedworkLocation);
 
-    var formattedworkDates = HTMLworkDates.replace("%data%", job.dates);
-    $(".work-entry:last").append(formattedworkDates);
+        var formattedworkDates = HTMLworkDates.replace("%data%", job.dates);
+        $(".work-entry:last").append(formattedworkDates);
 
-    var formattedworkDescription = HTMLworkDescription.replace("%data%", job.description);
-    $(".work-entry:last").append(formattedworkDescription);
-  })
+        var formattedworkDescription = HTMLworkDescription.replace("%data%", job.description);
+        $(".work-entry:last").append(formattedworkDescription);
+    })
 }
 // Call function
 displayWork();
@@ -263,97 +251,97 @@ projects.display = function () {
 };
 */
 
-projects.display = function () { //another way to start function
-  projects.projects.forEach(function(project) {
-    $("#projects").append(HTMLprojectStart);
+projects.display = function() { //another way to start function
+    projects.projects.forEach(function(project) {
+        $("#projects").append(HTMLprojectStart);
 
-    var formattedTitle = HTMLprojectTitle.replace("%data%", project.title);
-    $(".project-entry:last").append(formattedTitle);
+        var formattedTitle = HTMLprojectTitle.replace("%data%", project.title);
+        $(".project-entry:last").append(formattedTitle);
 
-    var formattedDates = HTMLprojectDates.replace("%data%", project.dates);
-    $(".project-entry:last").append(formattedDates);
+        var formattedDates = HTMLprojectDates.replace("%data%", project.dates);
+        $(".project-entry:last").append(formattedDates);
 
-    var formattedDescription = HTMLprojectDescription.replace("%data%", project.description);
-    $(".project-entry:last").append(formattedDescription);
+        var formattedDescription = HTMLprojectDescription.replace("%data%", project.description);
+        $(".project-entry:last").append(formattedDescription);
 
-    if (project.images.length > 0) {
-      project.images.forEach(function(image) {
-        var formattedImage = HTMLprojectImage.replace("%data%", image);
-        $(".project-entry:last").append(formattedImage);
-      });
-    }
-  })
+        if (project.images.length > 0) {
+            project.images.forEach(function(image) {
+                var formattedImage = HTMLprojectImage.replace("%data%", image);
+                $(".project-entry:last").append(formattedImage);
+            });
+        }
+    })
 };
 // Call function
 projects.display();
 
 //EDUCATION
 function displayEducation() {
-  education.schools.forEach(function(school) {
-    $("#education").append(HTMLschoolStart);
+    education.schools.forEach(function(school) {
+        $("#education").append(HTMLschoolStart);
 
-    var formattedSchoolName = HTMLschoolName.replace("%data%", school.name);
-    $(".education-entry:last").append(formattedSchoolName);
+        var formattedSchoolName = HTMLschoolName.replace("%data%", school.name);
+        $(".education-entry:last").append(formattedSchoolName);
 
-    var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", school.location);
-    $(".education-entry:last").append(formattedSchoolLocation);
+        var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", school.location);
+        $(".education-entry:last").append(formattedSchoolLocation);
 
-    var formattedSchoolDates = HTMLschoolDates.replace("%data%", school.dates);
-    $(".education-entry:last").append(formattedSchoolDates);
+        var formattedSchoolDates = HTMLschoolDates.replace("%data%", school.dates);
+        $(".education-entry:last").append(formattedSchoolDates);
 
-    var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
+        var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
 
-    if (school.majors.length > 0) {
-      school.majors.forEach(function(major) {
-        var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", major);
-        var formattedSchoolTitle = formattedSchoolMajor + formattedSchoolDegree;
-        $(".education-entry:last").append(formattedSchoolTitle);
-      });
+        if (school.majors.length > 0) {
+            school.majors.forEach(function(major) {
+                var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", major);
+                var formattedSchoolTitle = formattedSchoolMajor + formattedSchoolDegree;
+                $(".education-entry:last").append(formattedSchoolTitle);
+            });
+        }
+    })
+
+    // Added Certificates
+    if (education.certificates.length > 0) {
+        $(".education-entry:last").append(HTMLcertificates);
     }
-  })
 
-// Added Certificates
-  if (education.certificates.length > 0) {
-    $(".education-entry:last").append(HTMLcertificates);
-  }
+    education.certificates.forEach(function(certificate) {
 
-  education.certificates.forEach(function(certificate) {
+        var formattedCertificatesName = HTMLcertificatesName.replace("%data%", certificate.name);
+        $(".education-entry:last").append(formattedCertificatesName);
 
-      var formattedCertificatesName = HTMLcertificatesName.replace("%data%", certificate.name);
-      $(".education-entry:last").append(formattedCertificatesName);
+        var formattedCertificatesLocation = HTMLcertificatesLocation.replace("%data%", certificate.location);
+        $(".education-entry:last").append(formattedCertificatesLocation);
 
-      var formattedCertificatesLocation = HTMLcertificatesLocation.replace("%data%", certificate.location);
-      $(".education-entry:last").append(formattedCertificatesLocation);
+        var formattedCertificatesDates = HTMLcertificatesDates.replace("%data%", certificate.dates);
+        $(".education-entry:last").append(formattedCertificatesDates);
 
-      var formattedCertificatesDates = HTMLcertificatesDates.replace("%data%", certificate.dates);
-      $(".education-entry:last").append(formattedCertificatesDates);
-
-      if (certificate.majors.length > 0) {
-        certificate.majors.forEach(function(major) {
-          var formattedCertificatesMajor = HTMLcertificatesMajor.replace("%data%", major);
-          $(".education-entry:last").append(formattedCertificatesMajor);
-        });
-      }
-  })
+        if (certificate.majors.length > 0) {
+            certificate.majors.forEach(function(major) {
+                var formattedCertificatesMajor = HTMLcertificatesMajor.replace("%data%", major);
+                $(".education-entry:last").append(formattedCertificatesMajor);
+            });
+        }
+    })
 
 
-  if (education.onlineCourses.length > 0) {
-    $(".education-entry:last").append(HTMLonlineClasses);
-  }
+    if (education.onlineCourses.length > 0) {
+        $(".education-entry:last").append(HTMLonlineClasses);
+    }
 
-  education.onlineCourses.forEach(function(course) {
+    education.onlineCourses.forEach(function(course) {
 
-      var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", course.title);
-      var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", course.school);
-      var formattedOnlineSchoolTitle = formattedOnlineTitle + formattedOnlineSchool;
-      $(".education-entry:last").append(formattedOnlineSchoolTitle);
+        var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", course.title);
+        var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", course.school);
+        var formattedOnlineSchoolTitle = formattedOnlineTitle + formattedOnlineSchool;
+        $(".education-entry:last").append(formattedOnlineSchoolTitle);
 
-      var formattedOnlineDates = HTMLonlineDates.replace("%data%", course.dates);
-      $(".education-entry:last").append(formattedOnlineDates);
+        var formattedOnlineDates = HTMLonlineDates.replace("%data%", course.dates);
+        $(".education-entry:last").append(formattedOnlineDates);
 
-      var formattedOnlineURL = HTMLonlineURL.replace("%data%", course.url);
-      $(".education-entry:last").append(formattedOnlineURL);
-  })
+        var formattedOnlineURL = HTMLonlineURL.replace("%data%", course.url);
+        $(".education-entry:last").append(formattedOnlineURL);
+    })
 }
 // Call function
 displayEducation();
