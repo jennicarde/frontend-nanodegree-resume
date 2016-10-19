@@ -21,7 +21,7 @@ var bio = {
   },
   "welcomeMessage" : "I create for the web.",
   "skills" : ["HTML", "CSS", "JavaScript"],
-  "bioPic" : "http://placehold.it/200x200"
+  "bioPic" : "images/profile-pic-wood.png"
 };
 
 var work = {
@@ -37,7 +37,7 @@ var work = {
       "title" : "Content Coordinator",
       "location" : "Thailand",
       "dates" :"2011-2013",
-      "description" : "Taught journalistic writing, including instructing students on advanced sentence styles, encouraging English language enthusiasm and creativity, as well as reviewing and editing weekly writing submissions; <br>Promoted Unshy Magazine (a student newspaper) and complementary writing programs; <br>Co-wrote, directed, filmed, and edited student films for school events and contents."
+      "description" : "Taught journalistic writing, including instructing students on advanced sentence styles, encouraging English language enthusiasm and creativity; <br>Reviewed and edited weekly writing submissions; <br>Promoted Unshy Magazine (a student newspaper) and complementary writing programs; <br>Co-wrote, directed, filmed, and edited student films for school events and contents."
     }, {
       "employer" : "Wall Street English",
       "title" : "English Language Teacher",
@@ -103,14 +103,12 @@ var education = {
     {
       "name" : "International House Bangkok",
       "location" : "Thailand",
-      "degree" : "Certificate",
       "majors" : ["CELTA (The Certificate in teaching English to speakers of other languages)"],
       "dates" : "2011",
       "url" : "http://www.ihbangkok.com/"
     }, {
       "name" : "Orange County Human Relations/UCI",
       "location" : "Santa Ana, CA",
-      "degree" : "Certificate",
       "majors" : ["Mediation"],
       "dates" : "2005",
       "url" : "http://www.ochumanrelations.org/"
@@ -313,6 +311,31 @@ function displayEducation() {
       });
     }
   })
+
+// Added Certificates
+  if (education.certificates.length > 0) {
+    $(".education-entry:last").append(HTMLcertificates);
+  }
+
+  education.certificates.forEach(function(certificate) {
+
+      var formattedCertificatesName = HTMLcertificatesName.replace("%data%", certificate.name);
+      $(".education-entry:last").append(formattedCertificatesName);
+
+      var formattedCertificatesLocation = HTMLcertificatesLocation.replace("%data%", certificate.location);
+      $(".education-entry:last").append(formattedCertificatesLocation);
+
+      var formattedCertificatesDates = HTMLcertificatesDates.replace("%data%", certificate.dates);
+      $(".education-entry:last").append(formattedCertificatesDates);
+
+      if (certificate.majors.length > 0) {
+        certificate.majors.forEach(function(major) {
+          var formattedCertificatesMajor = HTMLcertificatesMajor.replace("%data%", major);
+          $(".education-entry:last").append(formattedCertificatesMajor);
+        });
+      }
+  })
+
 
   if (education.onlineCourses.length > 0) {
     $(".education-entry:last").append(HTMLonlineClasses);
