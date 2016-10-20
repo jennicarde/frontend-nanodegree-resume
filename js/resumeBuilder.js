@@ -220,7 +220,7 @@ function displayWork() { //one way to start function
 
         var formattedworkDescription = HTMLworkDescription.replace("%data%", job.description);
         $(".work-entry:last").append(formattedworkDescription);
-    })
+    });
 }
 // Call function
 displayWork();
@@ -270,7 +270,7 @@ projects.display = function() { //another way to start function
                 $(".project-entry:last").append(formattedImage);
             });
         }
-    })
+    });
 };
 // Call function
 projects.display();
@@ -298,7 +298,7 @@ function displayEducation() {
                 $(".education-entry:last").append(formattedSchoolTitle);
             });
         }
-    })
+    });
 
     // Added Certificates
     if (education.certificates.length > 0) {
@@ -322,7 +322,7 @@ function displayEducation() {
                 $(".education-entry:last").append(formattedCertificatesMajor);
             });
         }
-    })
+    });
 
 
     if (education.onlineCourses.length > 0) {
@@ -341,7 +341,7 @@ function displayEducation() {
 
         var formattedOnlineURL = HTMLonlineURL.replace("%data%", course.url);
         $(".education-entry:last").append(formattedOnlineURL);
-    })
+    });
 }
 // Call function
 displayEducation();
