@@ -45,15 +45,12 @@ var bio = {
         $("#header").append(formattedWelcomeMessage);
 
         if (bio.skills.length > 0) {
-            $("#header").append(HTMLskillsStart);
+          $("#header").append(HTMLskillsStart);
 
-            var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+          bio.skills.forEach(function(skill) {
+            var formattedSkill = HTMLskills.replace("%data%", skill);
             $("#skills").append(formattedSkill);
-            formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-            $("#skills").append(formattedSkill);
-            formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-            $("#skills").append(formattedSkill);
-            formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+          })
         }
 
         var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
