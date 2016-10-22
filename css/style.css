@@ -1,9 +1,8 @@
 body {
-  background:
-  linear-gradient(135deg, #F9FDFF 22px, rgba(233, 56, 84, 0.05) 22px, rgba(233, 56, 84, 0.05) 24px, transparent 24px, transparent 67px, rgba(233, 56, 84, 0.05) 67px, rgba(233, 56, 84, 0.05) 69px, transparent 69px),
+    background: linear-gradient(135deg, #F9FDFF 22px, rgba(233, 56, 84, 0.05) 22px, rgba(233, 56, 84, 0.05) 24px, transparent 24px, transparent 67px, rgba(233, 56, 84, 0.05) 67px, rgba(233, 56, 84, 0.05) 69px, transparent 69px),
   linear-gradient(225deg, #F9FDFF 22px, rgba(233, 56, 84, 0.05) 22px, rgba(233, 56, 84, 0.05) 24px, transparent 24px, transparent 67px, rgba(233, 56, 84, 0.05) 67px, rgba(233, 56, 84, 0.05) 69px, transparent 69px)0 64px;
-  background-color:#F9FDFF;
-  background-size: 64px 128px;
+    background-color: #F9FDFF;
+    background-size: 64px 128px;
 }
 
 body,
@@ -27,7 +26,7 @@ h6 {
 }
 
 #workExperience, #projects, #education, #mapDiv {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .education-entry,
@@ -74,16 +73,16 @@ h5 {
 }
 
 #name {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .role-text {
-  color: #333;
-  font-size: 20px;
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 20px;
+    color: #333;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .date-text {
@@ -150,15 +149,15 @@ a {
 }
 
 .contact-type {
-  color: #333;
+    color: #333;
 }
 
 .dark {
-  background-color: #333;
+    background-color: #333;
 }
 
 .pink {
-  background-color: #e93854;
+    background-color: #e93854;
 }
 
 
@@ -194,9 +193,8 @@ ul {
 }
 
 .skill {
-  margin: 10px;
+    margin: 10px;
 }
-
 
 .biopic {
     float: left;

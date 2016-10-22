@@ -1,7 +1,6 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
-
 var bio = {
     "name": "Jenni Carde",
     "role": "Front-End Developer",
@@ -15,7 +14,7 @@ var bio = {
     "welcomeMessage": "I create for the web.",
     "skills": ["HTML", "CSS", "JavaScript", "Bootstrap", "SASS", "Photoshop", "Illustrator", "Sketch", "WordPress"],
     "biopic": "images/profile-pic-wood.png",
-    "display": function () {
+    "display": function() {
         var formattedName = HTMLheaderName.replace("%data%", bio.name);
         var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
         $("#header").prepend(formattedRole);
@@ -48,12 +47,12 @@ var bio = {
         $("#header").append(formattedWelcomeMessage);
 
         if (bio.skills.length > 0) {
-          $("#header").append(HTMLskillsStart);
+            $("#header").append(HTMLskillsStart);
 
-          bio.skills.forEach(function(skill) {
-            var formattedSkill = HTMLskills.replace("%data%", skill);
-            $("#skills").append(formattedSkill);
-          })
+            bio.skills.forEach(function(skill) {
+                var formattedSkill = HTMLskills.replace("%data%", skill);
+                $("#skills").append(formattedSkill);
+            });
         }
     }
 };
@@ -113,7 +112,7 @@ var education = {
         "dates": "2016",
         "url": "https://certification.hubspot.com/inbound-certification"
     }],
-    "display": function () {
+    "display": function() {
         education.schools.forEach(function(school) {
             $("#education").append(HTMLschoolStart);
 
@@ -208,7 +207,7 @@ var work = {
         "dates": "2011-2013",
         "description": "Adapted instruction materials to create interesting, challenging, and fluid lessons in Encounter and Complementary classes; <br>Elicit, teach, and provide positive feedback and constructive critcism; <br>Motivated and encouraged students to maintain effective and efficient individual study habbits; <br>Planned and prepared engaging, interactive, and dynamic lesson for Social Clubs and English Corners."
     }],
-    "display": function () {
+    "display": function() {
         work.jobs.forEach(function(job) {
             $("#workExperience").append(HTMLworkStart);
 
