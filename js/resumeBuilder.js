@@ -122,6 +122,7 @@ var education = {
             $("#education").append(HTMLschoolStart);
 
             var formattedSchoolName = HTMLschoolName.replace("%data%", school.name);
+            formattedSchoolName = formattedSchoolName.replace("#", school.url);
             $(".education-entry:last").append(formattedSchoolName);
 
             var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", school.location);
@@ -149,6 +150,7 @@ var education = {
         education.certificates.forEach(function(certificate) {
 
             var formattedCertificatesName = HTMLcertificatesName.replace("%data%", certificate.name);
+            formattedCertificatesName = formattedCertificatesName.replace("#", certificate.url);
             $(".education-entry:last").append(formattedCertificatesName);
 
             var formattedCertificatesLocation = HTMLcertificatesLocation.replace("%data%", certificate.location);
@@ -173,6 +175,7 @@ var education = {
         education.onlineCourses.forEach(function(course) {
 
             var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", course.title);
+            formattedOnlineTitle = formattedOnlineTitle.replace("#", course.url);
             var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", course.school);
             var formattedOnlineSchoolTitle = formattedOnlineTitle + formattedOnlineSchool;
             $(".education-entry:last").append(formattedOnlineSchoolTitle);
@@ -189,28 +192,32 @@ var education = {
 var work = {
     "jobs": [{
         "employer": "Self",
+        "url": "http://learnelegantenglish.com",
         "title": "Online & Freelance English Teacher",
         "location": "Germany",
         "dates": "2014-2016",
         "description": "Teach private one-on-one lessons and intensive courses for all ages and levels in both General and Business English; <br>Design a diverse curriculum focused on motivating students and meeting each student's needs, learning style, and ability; <br>Incorporate education technology into interactice lessons."
     }, {
         "employer": "Unshy Magazine, Wall Street English",
+        "url": "http://issuu.com/wsethailand/docs/unshy-magazine-4-pdf",
         "title": "Content Coordinator",
         "location": "Thailand",
         "dates": "2011-2013",
         "description": "Taught journalistic writing, including instructing students on advanced sentence styles, encouraging English language enthusiasm and creativity; <br>Reviewed and edited weekly writing submissions; <br>Promoted Unshy Magazine (a student newspaper) and complementary writing programs; <br>Co-wrote, directed, filmed, and edited student films for school events and contents."
     }, {
         "employer": "Wall Street English",
+        "url": "http://www.wallstreetenglish.in.th/en/",
         "title": "English Language Teacher",
         "location": "Thailand",
         "dates": "2011-2013",
         "description": "Adapted instruction materials to create interesting, challenging, and fluid lessons in Encounter and Complementary classes; <br>Elicit, teach, and provide positive feedback and constructive critcism; <br>Motivated and encouraged students to maintain effective and efficient individual study habbits; <br>Planned and prepared engaging, interactive, and dynamic lesson for Social Clubs and English Corners."
     }],
-    "display": function () { //one way to start function
+    "display": function () {
         work.jobs.forEach(function(job) {
             $("#workExperience").append(HTMLworkStart);
 
             var formattedEmployer = HTMLworkEmployer.replace("%data%", job.employer);
+            formattedEmployer = formattedEmployer.replace("#", job.url);
             var formattedTitle = HTMLworkTitle.replace("%data%", job.title);
             var formattedEmployerTitle = formattedEmployer + formattedTitle;
             $(".work-entry:last").append(formattedEmployerTitle);
@@ -230,6 +237,7 @@ var work = {
 var projects = {
     "projects": [{
         "title": "Animal Trading Card",
+        "url": "http://github.com/jennicarde/FENDAnimalTradingCard",
         "dates": "2016",
         "description": "Practice CSS skills",
         "images": [
@@ -239,6 +247,7 @@ var projects = {
         ]
     }, {
         "title": "Mock up to Article",
+        "url": "http://github.com/jennicarde/FENDMockuptoArticle",
         "dates": "2016",
         "description": "Pratice HTML skills",
         "images": [
@@ -248,6 +257,7 @@ var projects = {
         ]
     }, {
         "title": "Portfolio",
+        "url": "http://github.com/jennicarde/FENDPortfolioProject",
         "dates": "2016",
         "description": "HTML, CSS, JavaScript, image compression, responsive design",
         "images": [
@@ -261,6 +271,7 @@ var projects = {
             $("#projects").append(HTMLprojectStart);
 
             var formattedTitle = HTMLprojectTitle.replace("%data%", project.title);
+            formattedTitle = formattedTitle.replace("#", project.url);
             $(".project-entry:last").append(formattedTitle);
 
             var formattedDates = HTMLprojectDates.replace("%data%", project.dates);
