@@ -13,7 +13,7 @@ var bio = {
         "location": "California"
     },
     "welcomeMessage": "I create for the web.",
-    "skills": ["HTML", "CSS", "JavaScript"],
+    "skills": ["HTML", "CSS", "JavaScript", "Bootstrap", "SASS", "Photoshop", "Illustrator", "Sketch", "WordPress"],
     "biopic": "images/profile-pic-wood.png",
     "display": function () {
         var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -41,6 +41,9 @@ var bio = {
         $("#topContacts").append(formattedMobile, formattedEmail, formattedGithub, formattedTwitter, formattedLocation);
         $("#footerContacts").append(formattedMobile, formattedEmail, formattedGithub, formattedTwitter, formattedLocation);
 
+        var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
+        $("#header").append(formattedBioPic);
+
         var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
         $("#header").append(formattedWelcomeMessage);
 
@@ -52,10 +55,6 @@ var bio = {
             $("#skills").append(formattedSkill);
           })
         }
-
-        var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
-        $("#header").append(formattedBioPic);
-
     }
 };
 

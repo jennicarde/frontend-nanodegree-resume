@@ -1,3 +1,11 @@
+body {
+  background:
+  linear-gradient(135deg, #F9FDFF 22px, rgba(233, 56, 84, 0.05) 22px, rgba(233, 56, 84, 0.05) 24px, transparent 24px, transparent 67px, rgba(233, 56, 84, 0.05) 67px, rgba(233, 56, 84, 0.05) 69px, transparent 69px),
+  linear-gradient(225deg, #F9FDFF 22px, rgba(233, 56, 84, 0.05) 22px, rgba(233, 56, 84, 0.05) 24px, transparent 24px, transparent 67px, rgba(233, 56, 84, 0.05) 67px, rgba(233, 56, 84, 0.05) 69px, transparent 69px)0 64px;
+  background-color:#F9FDFF;
+  background-size: 64px 128px;
+}
+
 body,
 div,
 ul,
@@ -11,11 +19,15 @@ h5,
 h6 {
     padding: 0;
     margin: 0;
-    font-family: "Calibri", sans-serif;
+    font-family: 'Crimson Text', serif;
 }
 
 .clear-fix {
     overflow: auto;
+}
+
+#workExperience, #projects, #education, #mapDiv {
+  margin: 20px 0;
 }
 
 .education-entry,
@@ -26,7 +38,7 @@ h6 {
 
 h1 {
     font-size: 68px;
-    color: #bd7f4f;
+    color: #e93854;
     line-height: 48px;
     display: block;
     text-align: center;
@@ -35,7 +47,7 @@ h1 {
 h2 {
     font-weight: bold;
     font-size: 24px;
-    color: #ac9475;
+    color: #333;
     line-height: 29px;
     padding: 10px;
 }
@@ -61,10 +73,17 @@ h5 {
     padding: 10px 5%;
 }
 
+#name {
+  text-transform: uppercase;
+}
+
 .role-text {
-    font-size: 24px;
-    display: block;
-    text-align: center;
+  color: #333;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
 }
 
 .date-text {
@@ -101,7 +120,7 @@ p {
 }
 
 a {
-    color: #fa6e59;
+    color: #ec3e63;
     text-decoration: none;
     margin-top: 10px;
     display: block;
@@ -110,41 +129,43 @@ a {
 .welcome-message {
     font-style: italic;
     font-size: 32px;
-    color: #f3f3f3;
-    line-height: 82px;
+    color: #333;
+    line-height: 132px;
 }
 
 #skills-h3 {
-    color: #bd7f4f;
+    color: #e93854;
     display: none;
-}
-
-.orange {
-    background-color: #bd7f4f;
-}
-
-.orange-text {
-    color: #bd7f4f;
+    font-style: normal;
 }
 
 .white-text {
     color: #f3f3f3;
 }
 
-.gray {
-    background-color: #f3f3f3;
-    padding-bottom: 10px;
+.section-bg {
+    background-color: #fcf6f6;
+    padding: 20px 0;
     clear: both;
 }
 
-.dark-gray {
-    background-color: #4a4a4a;
+.contact-type {
+  color: #333;
 }
 
-/* TODO: Replace with image later */
-#header {
-    background-color: #27282d;
+.dark {
+  background-color: #333;
 }
+
+.pink {
+  background-color: #e93854;
+}
+
+
+/* TODO: Replace with image later */
+/*#header {
+    background-color: #f9fdff;
+}*/
 
 .flex-box {
     display: -webkit-flex;
@@ -157,9 +178,11 @@ a {
 
 .flex-column {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    /*flex-direction: column;*/
+    /*flex-wrap: nowrap;*/
+    flex-wrap: wrap;
     padding: 10px;
+    width: 42%;
 }
 
 .center-content {
@@ -170,10 +193,16 @@ ul {
     list-style-type: none;
 }
 
+.skill {
+  margin: 10px;
+}
+
+
 .biopic {
     float: left;
-    padding: 10px;
-    width: 200px;
+    padding: 40px 10px 10px 10px;
+    margin: auto 10%;
+    width: 300px;
     display: none;
 }
 
